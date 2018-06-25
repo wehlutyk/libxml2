@@ -15,7 +15,8 @@ check_PROGRAMS=testSchemas testRelax testSAX testHTML testXPath testURI \
                testReader testapi testModule runtest runsuite testchar \
 	       testdict runxmlconf testrecurse testlimits
 
-bin_PROGRAMS = xmllint xmlcatalog
+# Don't compile programs for wasm32
+# bin_PROGRAMS = xmllint xmlcatalog
 
 bin_SCRIPTS=xml2-config
 
